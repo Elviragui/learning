@@ -1,0 +1,10 @@
+//A number that only appears once in an array.
+public class Solution{
+    public static int FindnNotDouble(int[] arr){
+          int result = arr[0];
+          for(int i = 1; i < arr.length; ++i){
+                result ^= arr[i];
+          }
+          return result;
+    }
+}
